@@ -1,6 +1,6 @@
 # _Beep Boop_
 
-#### _Project to show I undeerstand arrays and loops, 1/24/2020_
+#### _Project to show I understand arrays and loops, 1/24/2020_
 
 #### By _**Jack Dunning**_
 
