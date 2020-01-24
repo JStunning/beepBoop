@@ -6,22 +6,29 @@ $(document).ready(function(){
     var number = $("input#number").val();
     var name = $("input#name").val();
 
-    $("#result").append()
+    var arr = [];
     
     if(number.includes(3)){
-      $("#result").append(`I'm sorry ${name}, I'm afraid I can't do that. <br>`)
+      arr.push(`I'm sorry, ${name}. I'm afraid I can't do that. <br>`)
+      $("#result").append(arr[0])
       
     } else if(number.includes(2)){
-      $("#result").append(`Boop <br>`)
+      arr.push(`Boop <br>`)
+      $("#result").append(arr[0])
       
     } else if (number.includes(1)){
-      $("#result").append(`Beep <br>`)
+      arr.push(`Beep <br>`)
+      $("#result").append(arr[0])
       
     } else {
-      $("#result").append(`Beep <br>`)
-      $("#result").append(`Boop <br>`)
-      $("#result").append(`I'm sorry ${name}, I'm afraid I can't do that. <br>`)
+      arr.push(`Beep <br>`)
+      arr.push(`Boop <br>`)
+      arr.push(`I'm sorry, ${name}. I'm afraid I can't do that. <br>`)
+      $("#result").append(arr[0])
+      $("#result").append(arr[1])
+      $("#result").append(arr[2])
       for(var i = 4; i <= number; i++) {
+        arr.push(i)
         $("#result").append(`${i} <br>`)
       }
     }
