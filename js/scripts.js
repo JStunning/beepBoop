@@ -35,7 +35,7 @@ $(document).ready(function(){
 
     $("#reverseButton").click(function(event){
       event.preventDefault();
-      $("#regular").hide();
+      $("#regular").toggle();
       var revArr = arr.reverse();
       console.log(arr)
       console.log(revArr)
