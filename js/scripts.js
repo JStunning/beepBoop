@@ -4,20 +4,25 @@ $(document).ready(function(){
   $("#button").click(function(event){
     event.preventDefault();
     var number = $("input#number").val();
-
-    if(number > 2){
-      console.log("I'm sorry Dave, I can't do that.")
+    $("#result").append()
+    
+    if(number.includes(3)){
+      $("#result").append(`I'm sorry Dave, I'm afraid I can't do that. <br>`)
+      
     } else if(number.includes(2)){
-      console.log("Boop")
+      $("#result").append(`Boop <br>`)
+      
     } else if (number.includes(1)){
-      console.log("Beep")
+      $("#result").append(`Beep <br>`)
+      
+    } else {
+      $("#result").append(`Beep <br>`)
+      $("#result").append(`Boop <br>`)
+      $("#result").append(`I'm sorry Dave, I'm afraid I can't do that. <br>`)
+      for(var i = 4; i <= number; i++) {
+        $("#result").append(`${i} <br>`)
+      }
     }
-
-
-
-
+    
   })
-
-
-
 })
