@@ -65,3 +65,11 @@ h1 {
   background-color: #009BDC;
   color: white;
 }
+
+#reverseButton {
+  float: right;
+  margin: 0.5% 0.5% 0 0;
+  color: white;
+  background-color: #009BDC;
+  border: 1px solid white;
+}

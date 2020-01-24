@@ -24,15 +24,28 @@ $(document).ready(function(){
       arr.push(`Beep <br>`)
       arr.push(`Boop <br>`)
       arr.push(`I'm sorry, ${name}. I'm afraid I can't do that. <br>`)
-      $("#result").append(arr[0])
-      $("#result").append(arr[1])
-      $("#result").append(arr[2])
+      $("#regular").append(arr[0])
+      $("#regular").append(arr[1])
+      $("#regular").append(arr[2])
       for(var i = 4; i <= number; i++) {
         arr.push(`${i}`)
-        console.log(arr)
-        $("#result").append(`${arr[i - 1]} <br>`)
+        $("#regular").append(`${arr[i - 1]} <br>`)
       }
     }
-    
+
+    $("#reverseButton").click(function(event){
+      event.preventDefault();
+      $("#regular").hide();
+      var revArr = arr.reverse();
+      console.log(arr)
+      console.log(revArr)
+
+      for (var i = 0; i < revArr.length - 3; i++) {
+        $("#reverse").append(`${revArr[i]} <br>`)
+      }
+      $("#reverse").append(revArr[arr.length - 3])
+      $("#reverse").append(revArr[arr.length - 2])
+      $("#reverse").append(revArr[arr.length - 1])
+    })
   })
 })
