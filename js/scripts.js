@@ -28,8 +28,9 @@ $(document).ready(function(){
       $("#result").append(arr[1])
       $("#result").append(arr[2])
       for(var i = 4; i <= number; i++) {
-        arr.push(i)
-        $("#result").append(`${i} <br>`)
+        arr.push(`${i}`)
+        console.log(arr)
+        $("#result").append(`${arr[i - 1]} <br>`)
       }
     }
     
