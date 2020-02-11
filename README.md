@@ -23,7 +23,7 @@ _That should be all the set up_
       * _Input:_ "1"
       * _Output:_ "Beep"
       * _Input:_ "2"
-      * _Output:_ "Beep 
+      * _Output:_ "Beep \n
                    Boop"
       * _Input:_ "3"
       * _Output:_ "Beep 
