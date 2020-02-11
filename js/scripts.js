@@ -1,4 +1,4 @@
-function beepBoop(num, name) {
+function beepBoop(num, name) { // Business Logic
   if(num.includes(3)){
     return `Beep <br>Boop <br>I'm sorry, ${name}. I'm afraid I can't do that. <br>`
   } else if(num.includes(2)) {
@@ -16,7 +16,7 @@ function beepBoop(num, name) {
 }
 
 
-$(document).ready(function(){
+$(document).ready(function(){ // Interface Logic
 
   //button clicked function
   $("#button").click(function(event){
