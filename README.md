@@ -24,13 +24,10 @@ _That should be all the set up_
       * _Output:_ "Beep"
       * _Input:_ "2"
       * _Output:_ "Beep
-      
                    Boop"
       * _Input:_ "3"
       * _Output:_ "Beep 
-      
                    Boop
-                   
                    I'm sorry, ${name}. I'm afraid I can't do that."
       
 
